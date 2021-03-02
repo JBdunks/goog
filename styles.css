@@ -1,0 +1,203 @@
+html {
+    height:100vh;
+    width: 100vw;
+}
+
+#navbar {
+    display: grid;
+    margin: 0 20px 0 10px;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 'about store . gmail images menu  sign_in';
+}
+
+#footer {
+    width: 100vw;
+    background-color:#F2F2F2;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 8% 8% 10% 44% 10% 10% 10%x;
+    grid-template-rows: 50px;
+    grid-template-areas: 'advertising business how carbon privacy terms settings'
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    margin-right: 15px;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+    margin-right: 15px;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
+
+#sign_in {
+    grid-area: sign_in;
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color:black
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas:
+    '. logo .'
+    '. search .'
+    '. search_box .';
+}
+
+#main:hover{
+    text-decoration:none;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    grid-area: search;
+    height: 30px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration:none;
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+    outline: none;
+}
+
+#search_box {
+    display: flexbox;
+    grid-area: search_box;
+    justify-self: center;
+    align-self: center;
+}
+
+#search_btn {
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color:#F8F9FA;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    cursor: pointer;
+}
+
+#search_btn:focus {
+    box-shadow: 1px 1px 5px grey;
+    outline: none;
+}
+
+#search_btn:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#lucky_btn {
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color:#F8F9FA;
+    padding: 7px 15px 7px 15px;
+    cursor: pointer;
+}
+
+#lucky_btn:focus {
+    box-shadow: 1px 1px 5px grey;
+    outline: none;
+}
+
+#lucky_btn:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: left;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: left;
+    align-self: center;
+}
+
+#how {
+    grid-area: how;
+    justify-self: left;
+    align-self: center;
+}
+
+#carbon {
+    grid-area: carbon;
+    justify-self: left;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: right;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: right;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: right;
+    align-self: center;
+    
+}

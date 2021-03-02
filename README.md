@@ -1,2 +1,4 @@
 # goog
-replicate google
+
+
+https://jbdunks.github.io/goog/
